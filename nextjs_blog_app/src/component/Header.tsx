@@ -8,7 +8,6 @@ const Header = () => {
         Home
       </Link>
       <Link href={"/posts"} className="hover:text-slate-300 ">
-        {" "}
         Posts
       </Link>
     </div>
