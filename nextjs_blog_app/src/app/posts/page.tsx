@@ -10,7 +10,7 @@ const Page = async () => {
       </div>
       <ul className="text-center">
         {data.posts.map((item: any) => (
-          <li>{item.title}</li>
+          <li key={item.title}>{item.title}</li>
         ))}
       </ul>
     </div>
