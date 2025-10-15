@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Page = async () => {
@@ -10,7 +11,9 @@ const Page = async () => {
       </div>
       <ul className="text-center">
         {data.posts.map((item: any) => (
-          <li key={item.title}>{item.title}</li>
+          <li key={item.title}>
+            <Link href={`/posts/${item.id}`}>{item.title}</Link>
+          </li>
         ))}
       </ul>
     </div>
